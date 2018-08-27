@@ -1,0 +1,18 @@
+1. In etherscan search for Honeypot contract and check out the code.
+
+2. Open a new file in remix (browser/AttackExer.sol) and copy the contract's code from etherscan to it.
+
+3. Write the AttackPot contract doing the exploit.
+
+4. hard-coded the Pot's address into the AttackPot contract, so it would send tx to that specific contract only.
+
+5. Activate Metamask locally in the browser.
+
+6. In Remix, switch Environment to "Injected Web3" which will display the Metamask-controlled Robsten account(s). Must at least hold 0.5 ether.
+
+7. Deploy the AttackPot contract, giving a value at start of 0.5 ether.
+
+8. CallPut with 500000000000000000 (0.5 ether), so Honeypot assigns that value to the balances mapping for the Attacker contract.
+
+9. CallGet - will exploit by re-entering 10 times (making count rise to 11 in the end).
+

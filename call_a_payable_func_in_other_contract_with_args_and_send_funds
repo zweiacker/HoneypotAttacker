@@ -1,0 +1,4 @@
+The general syntax for calling a function in another contract with arguments and sending funds is: 
+address.func.value(amount)(arg1, arg2, arg3)
+
+-> func needs to have the payable modifier (for Solidity 0.4+).
